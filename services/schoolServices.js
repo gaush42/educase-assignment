@@ -17,6 +17,7 @@ exports.getSchoolsSortedByProximity = async (userLatitude, userLongitude) => {
     }
 
     const schools = await School.findAll();
+    
     return schools.map(school => {
         const distance = calculateDistance(userLatitude, userLongitude, school.latitude, school.longitude);
         return { ...school.toJSON(), distance };
