@@ -18,13 +18,3 @@ exports.listSchools = async (req, res) => {
         res.status(400).json({ error: err.message });
     }
 };
-
-exports.test = async (req,res) => {
-    try{
-        t = "Hello from controller"
-        console.log("Hello from controller")
-        res.json(t)
-    } catch {
-        res.status(400).json({ error: err.message })
-    }
-}
