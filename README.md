@@ -54,3 +54,6 @@ This is an assignment repo from Educase
     **example**
     ```
     http://localhost:4000/api/listSchools/?latitude=19.4&longitude=77.2
+
+## API Doc
+- [API](https://documenter.getpostman.com/view/37875560/2sAXjF8EYe)
