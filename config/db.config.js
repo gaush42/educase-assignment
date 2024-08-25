@@ -3,6 +3,7 @@ const fs = require('fs')
 const Sequelize = require('sequelize')
 require('dotenv').config();
 
+//This code establishes a connection to a database using Sequelize, with SSL encryption enabled
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
